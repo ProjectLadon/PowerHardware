@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-04-05T15:22:27Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.9941,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "MPPTBatteryCharger"
+        },
+        "Owner": "Pierce Nichols <pierce@logos-electro.com>",
+        "Size": {
+            "X": 45.72,
+            "Y": 21.59
+        }
+    }
+}
