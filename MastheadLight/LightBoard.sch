@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,8 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -4591,67 +4593,58 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="LED-TRICOLOR-5050-IC" urn="urn:adsk.eagle:footprint:39325/1" library_version="1">
-<description>&lt;h3&gt;5060 SMD RGB LED&lt;/h3&gt;
-&lt;p&gt;&lt;b&gt;Specifications:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
-&lt;li&gt;Pin pitch: 0.6mm&lt;/li&gt;
-&lt;li&gt;Area: 5.0mm x 5.0mm&lt;/li&gt;
+<package name="WS2812B" urn="urn:adsk.eagle:footprint:39331/1" library_version="1">
+<description>&lt;h3&gt;WS2812B&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;li&gt;Size: 5.0 x 5.0 mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/WS2812.pdf"&gt; WS2812&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Example device(s):&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;WS2812&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<circle x="-0.7" y="2" radius="0.2236" width="0" layer="21"/>
-<circle x="0" y="0" radius="2" width="0.127" layer="51"/>
-<circle x="-2.224" y="2.6096" radius="0.2236" width="0" layer="21"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.127" layer="51"/>
-<wire x1="-1.8" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-1" y1="2.5" x2="1" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-2.5" x2="1" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="0.7" x2="-2.5" y2="0.9" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="-0.9" x2="-2.5" y2="-0.7" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="-0.9" x2="2.5" y2="-0.7" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.7" x2="2.5" y2="0.9" width="0.2032" layer="21"/>
-<wire x1="-1.016" y1="-0.381" x2="-1.016" y2="0.381" width="0.2032" layer="21"/>
-<wire x1="-1.016" y1="0.381" x2="-0.127" y2="0.381" width="0.2032" layer="21"/>
-<wire x1="-0.127" y1="0.381" x2="-0.127" y2="-0.381" width="0.2032" layer="21"/>
-<wire x1="-0.127" y1="-0.381" x2="-1.016" y2="-0.381" width="0.2032" layer="21"/>
-<wire x1="0.254" y1="-0.127" x2="0.254" y2="0.127" width="0.2032" layer="21"/>
-<wire x1="0.254" y1="0.127" x2="0.508" y2="0.127" width="0.2032" layer="21"/>
-<wire x1="0.508" y1="0.127" x2="0.508" y2="-0.127" width="0.2032" layer="21"/>
-<wire x1="0.508" y1="-0.127" x2="0.254" y2="-0.127" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="2" x2="-1.8" y2="2.5" width="0.127" layer="51"/>
-<rectangle x1="1.7" y1="-0.45" x2="2.7" y2="0.45" layer="51"/>
-<rectangle x1="1.7" y1="1.15" x2="2.7" y2="2.05" layer="51"/>
-<rectangle x1="1.7" y1="-2.05" x2="2.7" y2="-1.15" layer="51"/>
-<rectangle x1="-2.7" y1="1.15" x2="-1.7" y2="2.05" layer="51" rot="R180"/>
-<rectangle x1="-2.7" y1="-0.45" x2="-1.7" y2="0.45" layer="51" rot="R180"/>
-<rectangle x1="-2.7" y1="-2.05" x2="-1.7" y2="-1.15" layer="51" rot="R180"/>
-<smd name="1" x="-2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
-<smd name="2" x="-2.4" y="0" dx="2" dy="1.1" layer="1" roundness="100"/>
-<smd name="3" x="-2.4" y="-1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
-<smd name="4" x="2.4" y="-1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
-<smd name="5" x="2.4" y="0" dx="2" dy="1.1" layer="1" roundness="100"/>
-<smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
-<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"&gt;WS2812B&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;WS2812B&lt;/li&gt;</description>
+<smd name="1" x="2.577" y="-1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
+<smd name="4" x="-2.577" y="-1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="-2.577" y="1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="2.577" y="1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.4892" y1="-2.362203125" x2="2.4892" y2="-2.616203125" width="0.2032" layer="21"/>
+<wire x1="2.4892" y1="-2.616203125" x2="2.4384" y2="-2.616203125" width="0.2032" layer="21"/>
+<wire x1="2.4384" y1="-2.616203125" x2="2.4384" y2="-2.611121875" width="0.2032" layer="21"/>
+<wire x1="2.4384" y1="-2.611121875" x2="-2.512059375" y2="-2.611121875" width="0.2032" layer="21"/>
+<wire x1="-2.512059375" y1="-2.611121875" x2="-2.512059375" y2="-2.37998125" width="0.2032" layer="21"/>
+<wire x1="2.50951875" y1="2.319021875" x2="2.50951875" y2="2.5908" width="0.2032" layer="21"/>
+<wire x1="2.50951875" y1="2.5908" x2="2.45871875" y2="2.5908" width="0.2032" layer="21"/>
+<wire x1="2.45871875" y1="2.5908" x2="2.45871875" y2="2.593340625" width="0.2032" layer="21"/>
+<wire x1="2.45871875" y1="2.593340625" x2="-2.50951875" y2="2.593340625" width="0.2032" layer="21"/>
+<wire x1="-2.50951875" y1="2.593340625" x2="-2.50951875" y2="2.36728125" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.889" x2="2.54" y2="-0.8128" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.8636" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.8636" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="2.54" width="0.2032" layer="21"/>
+<text x="0" y="2.794" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<circle x="-2.8575" y="2.8575" radius="0.2032" width="0" layer="21"/>
+<circle x="-1.27" y="1.905" radius="0.2032" width="0" layer="51"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="LED-TRICOLOR-5050-IC" urn="urn:adsk.eagle:package:39366/1" type="box" library_version="1">
-<description>5060 SMD RGB LED
-Specifications:
-Pin count: 6
-Pin pitch: 0.6mm
-Area: 5.0mm x 5.0mm
+<package3d name="WS2812B" urn="urn:adsk.eagle:package:39369/1" type="box" library_version="1">
+<description>WS2812B
 
-Datasheet referenced for footprint: WS2812
-Example device(s):
-WS2812
-</description>
+Specifications:
+Pin count: 4
+Size: 5.0 x 5.0 mm
+
+Datasheet referenced for footprint: WS2812B
+Example device:
+WS2812B</description>
+<packageinstances>
+<packageinstance name="WS2812B"/>
+</packageinstances>
 </package3d>
 </packages3d>
 <symbols>
@@ -4706,37 +4699,36 @@ WS2812
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="WS2812" urn="urn:adsk.eagle:component:39394/1" prefix="U" library_version="1">
-<description>&lt;h3&gt;WS2812 RGB LED w/ WS2811 driver&lt;/h3&gt;
+<deviceset name="WS2812B" urn="urn:adsk.eagle:component:39395/1" prefix="D" uservalue="yes" library_version="1">
+<description>&lt;h3&gt;WS2812B SMD addressable RGB LED&lt;/h3&gt;
 5x5mm SMD LED with built-in controller IC.
 
 &lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 550, 1100, 200 mcd&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 20, 20, 20 mA&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 1.8, 3.0, 3.2 V&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;LED-TRICOLOR-5050-IC&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 390, 660, 180 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.0, 3.0 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;WS2812B&lt;/li&gt;
 &lt;/p&gt;
 &lt;p&gt;SparkFun Products:
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11821”&gt;LED-SMD RGB (WS2812)&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board - ESP8266&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="U1" symbol="LED-TRICOLOR-WS28X1" x="0" y="0"/>
+<gate name="G$1" symbol="LED-TRICOLOR-WS28X1" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="&quot;" package="LED-TRICOLOR-5050-IC">
+<device name="" package="WS2812B">
 <connects>
-<connect gate="U1" pin="DI" pad="2" route="any"/>
-<connect gate="U1" pin="DO" pad="1"/>
-<connect gate="U1" pin="VDD" pad="3 5"/>
-<connect gate="U1" pin="VSS" pad="6"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="DO" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39366/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39369/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="DIO-11598"/>
-<attribute name="VALUE" value="WS2812" constant="no"/>
+<attribute name="PROD_ID" value="DIO-12503"/>
+<attribute name="VALUE" value="WS2812B" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4765,28 +4757,62 @@ WS2812
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100n"/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100n"/>
-<part name="U1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="WS2812" device="&quot;" package3d_urn="urn:adsk.eagle:package:39366/1" value="WS2812"/>
-<part name="U2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="WS2812" device="&quot;" package3d_urn="urn:adsk.eagle:package:39366/1" value="WS2812"/>
+<part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="WS2812B" device="" package3d_urn="urn:adsk.eagle:package:39369/1" value="WS2812B"/>
+<part name="D3" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="WS2812B" device="" package3d_urn="urn:adsk.eagle:package:39369/1" value="WS2812B"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
-<instance part="D1" gate="G$1" x="101.6" y="116.84" rot="MR270"/>
-<instance part="GND1" gate="1" x="134.62" y="88.9"/>
-<instance part="GND2" gate="1" x="193.04" y="88.9"/>
-<instance part="P+1" gate="1" x="134.62" y="134.62"/>
-<instance part="P+2" gate="1" x="193.04" y="134.62"/>
-<instance part="JP1" gate="A" x="104.14" y="101.6" rot="MR0"/>
-<instance part="GND3" gate="1" x="91.44" y="88.9"/>
-<instance part="P+3" gate="1" x="116.84" y="134.62"/>
-<instance part="C1" gate="G$1" x="134.62" y="114.3"/>
-<instance part="C2" gate="G$1" x="193.04" y="114.3"/>
-<instance part="U1" gate="U1" x="157.48" y="111.76"/>
-<instance part="U2" gate="U1" x="208.28" y="111.76"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="D1" gate="G$1" x="101.6" y="116.84" smashed="yes" rot="MR270">
+<attribute name="NAME" x="106.172" y="113.284" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="106.172" y="111.125" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND1" gate="1" x="134.62" y="88.9" smashed="yes">
+<attribute name="VALUE" x="132.08" y="86.36" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="185.42" y="88.9" smashed="yes">
+<attribute name="VALUE" x="182.88" y="86.36" size="1.778" layer="96"/>
+</instance>
+<instance part="P+1" gate="1" x="134.62" y="134.62" smashed="yes">
+<attribute name="VALUE" x="132.08" y="129.54" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+2" gate="1" x="185.42" y="134.62" smashed="yes">
+<attribute name="VALUE" x="182.88" y="129.54" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="JP1" gate="A" x="104.14" y="101.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="110.49" y="107.315" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="110.49" y="93.98" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND3" gate="1" x="91.44" y="88.9" smashed="yes">
+<attribute name="VALUE" x="88.9" y="86.36" size="1.778" layer="96"/>
+</instance>
+<instance part="P+3" gate="1" x="116.84" y="134.62" smashed="yes">
+<attribute name="VALUE" x="114.3" y="129.54" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C1" gate="G$1" x="134.62" y="114.3" smashed="yes">
+<attribute name="NAME" x="136.144" y="114.681" size="1.778" layer="95"/>
+<attribute name="VALUE" x="136.144" y="109.601" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="185.42" y="114.3" smashed="yes">
+<attribute name="NAME" x="186.944" y="114.681" size="1.778" layer="95"/>
+<attribute name="VALUE" x="186.944" y="109.601" size="1.778" layer="96"/>
+</instance>
+<instance part="D2" gate="G$1" x="157.48" y="111.76" smashed="yes">
+<attribute name="NAME" x="144.78" y="120.142" size="1.778" layer="95"/>
+<attribute name="VALUE" x="144.78" y="104.14" size="1.778" layer="95"/>
+</instance>
+<instance part="D3" gate="G$1" x="208.28" y="111.76" smashed="yes">
+<attribute name="NAME" x="195.58" y="120.142" size="1.778" layer="95"/>
+<attribute name="VALUE" x="195.58" y="104.14" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4796,16 +4822,17 @@ WS2812
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="91.44" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U1" pin="VSS"/>
 <wire x1="142.24" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 <junction x="134.62" y="109.22"/>
+<pinref part="D2" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="91.44" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U1" pin="VSS"/>
-<junction x="193.04" y="109.22"/>
+<wire x1="185.42" y1="91.44" x2="185.42" y2="109.22" width="0.1524" layer="91"/>
+<junction x="185.42" y="109.22"/>
+<wire x1="185.42" y1="109.22" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
@@ -4818,17 +4845,18 @@ WS2812
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U1" gate="U1" pin="VDD"/>
 <wire x1="142.24" y1="116.84" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="116.84" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
 <junction x="134.62" y="116.84"/>
+<pinref part="D2" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="132.08" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U1" pin="VDD"/>
-<junction x="193.04" y="116.84"/>
+<wire x1="185.42" y1="132.08" x2="185.42" y2="116.84" width="0.1524" layer="91"/>
+<junction x="185.42" y="116.84"/>
+<wire x1="185.42" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
@@ -4842,8 +4870,8 @@ WS2812
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="106.68" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="104.14" x2="172.72" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U1" pin="DI"/>
 <wire x1="172.72" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="DI"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4853,8 +4881,8 @@ WS2812
 <wire x1="91.44" y1="104.14" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="124.46" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U1" pin="DO"/>
 <wire x1="220.98" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="DO"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4877,13 +4905,13 @@ WS2812
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U1" gate="U1" pin="DO"/>
 <wire x1="170.18" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="109.22" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="101.6" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="101.6" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U1" pin="DI"/>
 <wire x1="223.52" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="DO"/>
+<pinref part="D3" gate="G$1" pin="DI"/>
 </segment>
 </net>
 </nets>
